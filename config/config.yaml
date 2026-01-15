@@ -46,7 +46,8 @@ platforms:
     name: "抖音"
   - id: "zhihu"
     name: "知乎"
-
+  - id: "sc.gov.cn"
+    name: "四川省政府网"
 
 # ===============================================================
 # 3. 数据源 - RSS 订阅
@@ -94,7 +95,13 @@ rss:
       name: "雅虎财经"
       url: "https://finance.yahoo.com/news/rssindex"
       enabled: false                  # 禁用
-
+    
+    - id: "sc.gov.cn"
+      name: "四川省政府网"
+      url: "https://www.sc.gov.cn/"
+      enabled: true
+      max_age_days: 7
+      
     # 自定义源示例
     # - id: "custom-feed"
     #   name: "自定义源"
